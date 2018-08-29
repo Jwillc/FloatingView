@@ -389,16 +389,17 @@ class FloatingView extends FrameLayout implements ViewTreeObserver.OnPreDrawList
     private int mRotation;
 
     static {
+        OVERLAY_TYPE = WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
         /*if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.N_MR1) {
             OVERLAY_TYPE = WindowManager.LayoutParams.TYPE_PRIORITY_PHONE;
         } else {
             OVERLAY_TYPE = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
         }*/
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
+        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP_MR1) {
             OVERLAY_TYPE = WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY;
         } else {
             OVERLAY_TYPE = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY;
-        }
+        }*/
     }
 
     /**
